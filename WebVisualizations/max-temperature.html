@@ -23,10 +23,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+
 </head>
-<body>
+
+<body style="background-color:#e9e8e8">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Lattitute</a>
+        <a class="brand" href="Landing.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,57 +37,74 @@
             <div class="position-right">
                 <!-- dropdown -->
                 <div class="dropdown refer-page">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset"
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" id="dropdownMenuOffset"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
                         Plots
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                        <a class="dropdown-item" href="#">Max Temperature</a>
-                        <a class="dropdown-item" href="#">Humidity</a>
-                        <a class="dropdown-item" href="#">Cloudiness</a>
-                        <a class="dropdown-item" href="#">Wind Speed</a>
+                        <a class="dropdown-item" href="max-temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
                     </div>
                 </div>
                 <!-- dropdown -->
-                <a class="refer-page" href=""> Comparison</a>
-                <a class="refer-page" href="">Data</a>
+
+                <a class="refer-page" href="Comparision.html"> Comparison</a>
+                <a class="refer-page" href="Data.html">Data</a>
             </div>
         </div>
     </nav>
-<!-- main -->
-<h1>Max Temperature</h1>
-<hr>
-<img src="../WebVisualizations/assets/images/Fig1.png" alt="Max Temperature">
-<p>As expected, the weather becomes significantly warmer as one approaches the equator (0° Latitude). More
-    interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the
-    northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.
-</p>
-<!-- visualization -->
-<a href="">
-    <img src="../WebVisualizations/assets/images/Fig1.png" alt="">
-</a>
-<a href="">
-    <img src="../WebVisualizations/assets/images/Fig2.png" alt="">
-</a>
-<a href="">
-    <img src="../WebVisualizations/assets/images/Fig3.png" alt="">
-</a>
-<a href="">
-    <img src="../WebVisualizations/assets/images/Fig4.png" alt="">
 
-</a>
-<!-- main -->
+    <!-- main -->
+    <div class="container">
+
+        <div class="row">
+            <!--First of Two Columns-->
+            <div class="col-md-7">
+                <h1 class="title">Max Temperature</h1>
+                <hr>
+                <img style="width:350px; margin: 20px 5px 5px;" src="../WebVisualizations/assets/images/Fig1.png"
+                    alt="Max temperature"
+                    align="left">
+                <p class="para" style="margin-top: 60px;">As expected, the weather becomes significantly warmer as one
+                    approaches the equator (0° Latitude). More
+                    interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the
+                    year than
+                    the
+                    northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was
+                    gathered.
+                </p>
+                
+            </div>
+            <!--Second of Two Columns-->
+            <div class="col-md-4 col-sm-12">
+                <h2 class="side-bar">Visualization</h2>
+                <hr>
+                <section>
+                    <a href="max-temperature.html">
+                        <img class="Visualization" src=" ../WebVisualizations/assets/images/Fig1.png"
+                            alt="Max temperature">
+                    </a>
+                    <a href="humidity.html">
+                        <img class="Visualization" src=" ../WebVisualizations/assets/images/Fig2.png" alt="humidity">
+                    </a>
+                    <a href="cloudiness.html">
+                        <img class="Visualization" src=" ../WebVisualizations/assets/images/Fig3.png" alt="Cloudiness">
+                    </a>
+                    <a href="WindSpeed.html">
+                        <img class="Visualization" src=" ../WebVisualizations/assets/images/Fig4.png" alt="Wind Speed">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr class="seperate-line" color: rgb(41, 175, 175);>
 </body>
 
 <footer>
     <div class="footer">&copy; Copyright Coding BootCamp 2017</div>
 </footer>
-</html> 
 
-
-
-
-
-
-
-
+</html>
