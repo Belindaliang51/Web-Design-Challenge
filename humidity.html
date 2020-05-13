@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Dashboard</title>
+
+    <!-- css.style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body style="background-color:#e9e8e8">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="position-right">
+                <!-- dropdown -->
+                <div class="dropdown refer-page">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle" id="dropdownMenuOffset"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                        Plots
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                        <a class="dropdown-item" href="max-temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="WindSpeed.html">Wind Speed</a>
+                    </div>
+                </div>
+                <!-- dropdown -->
+
+                <a class="refer-page" href="Comparision.html"> Comparison</a>
+                <a class="refer-page" href="Data.html">Data</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <div class="container">
+
+        <div class="row">
+            <!--First of Two Columns-->
+            <div class="col-md-7">
+                <h1 class="title">Humidity</h1>
+                <hr>
+                <img style="width:350px; margin: 20px 5px 5px;" src="assets/Fig2.png"
+                    alt="Humidity"
+                    align="left">
+                <p class="para" style="margin-top: 60px;">Even though the corelation between latitude and humidity is
+                    weak, the humidity tends to decrease in some area,
+                    such as from -20° to 0° latitude and from 40° to 60° latitude.
+                </p>
+
+            </div>
+            <!--Second of Two Columns-->
+            <div class="col-md-4 col-sm-12">
+                <h2 class="side-bar">Visualization</h2>
+                <hr>
+                <section>
+                    <a href="max-temperature.html">
+                        <img class="Visualization" src="assets/Fig1.png"
+                            alt="Max temperature">
+                    </a>
+                    <a href="humidity.html">
+                        <img class="Visualization" src="assets/Fig2.png" alt="humidity">
+                    </a>
+                    <a href="cloudiness.html">
+                        <img class="Visualization" src="assets/Fig3.png" alt="Cloudiness">
+                    </a>
+                    <a href="WindSpeed.html">
+                        <img class="Visualization" src="assets/Fig4.png" alt="Wind Speed">
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr class="seperate-line" color: rgb(41, 175, 175);>
+</body>
+
+<footer>
+    <div class="footer">&copy; Copyright Coding BootCamp 2017</div>
+</footer>
+
+</html>
